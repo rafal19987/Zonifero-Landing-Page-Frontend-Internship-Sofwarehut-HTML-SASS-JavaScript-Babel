@@ -1,0 +1,73 @@
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400;700&display=swap');
+
+$primary_font_family: 'Poppins', sans-serif;
+$scondary_font_family: 'Roboto', sans-serif;
+
+// typography
+
+$font_bold: 700;
+$font_regular: 400;
+$font_light: 300;
+
+$font_xl: '70px';
+$font_l: '30px';
+$font_m: '19px';
+$font_s: '17px';
+
+$line_height_xl: '80px';
+$line_height_m: '40px';
+$line_height_s: '26px';
+$line_height_xs: '25px';
+
+// colors
+
+$primary_color: #3146ff;
+$secondary_color: #01ffcb;
+$primary_text_color: #000000;
+$background_color: #f7f7f7;
+
+// reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// layout
+
+body {
+  background: $background_color;
+}
