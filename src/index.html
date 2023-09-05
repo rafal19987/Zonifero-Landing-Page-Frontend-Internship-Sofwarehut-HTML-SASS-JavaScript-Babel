@@ -11,16 +11,39 @@
         <!-- mobile header -->
         <div class="mobile-header">
           <div>
-            <img src="./assets/logo.png" alt="landing page logo" />
+            <img alt="landing page logo" src="logo.png" />
           </div>
           <div>
             <span>Zenifero products</span>
             <span>↓</span>
           </div>
-          <div class="hamburger">
+          <div
+            class="hamburger"
+            aria-label="Open menu"
+            aria-controls="mobileMenu"
+          >
             <span class="hamburger__span hamburger__first-span"></span>
             <span class="hamburger__span hamburger__second-span"></span>
             <span class="hamburger__span hamburger__third-span"></span>
+          </div>
+          <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__list-item">
+                <a href="#overview" class="mobile-menu__list-link">Overview</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="#features" class="mobile-menu__list-link">Features</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="#specs" class="mobile-menu__list-link">Specs</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="#faq" class="mobile-menu__list-link">FAQ</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="#contact" class="mobile-menu__list-link">Contact</a>
+              </li>
+            </ul>
           </div>
           <!-- mobile menu -->
         </div>
@@ -28,7 +51,7 @@
         <!-- desktop menu -->
         <div class="upper-header">
           <div class="upper-header__logo-container">
-            <img src="./assets/logo.png" alt="landing page logo" />
+            <img src="logo.png" alt="landing page logo" />
           </div>
           <div class="upper-header__menu-container">
             <ul class="upper-header__menu-list">
@@ -36,7 +59,7 @@
               <li class="upper-header__menu-list-item">Store</li>
               <li class="upper-header__menu-list-item">Blog</li>
               <li class="upper-header__menu-list-item">
-                <img src="./assets/globe.png" alt="globe icon" />
+                <img src="globe.png" alt="globe icon" />
                 <span>↓</span>
               </li>
               <li class="upper-header__menu-list-item signin-button">
@@ -52,77 +75,72 @@
               >zonifero WorkPlace:</span
             >
             <ul class="bottom-header__menu-list">
-              <li class="bottom-header__menu-list-item">Overview</li>
-              <li class="bottom-header__menu-list-item">Features</li>
-              <li class="bottom-header__menu-list-item">Specs</li>
-              <li class="bottom-header__menu-list-item">FAQ</li>
-              <li class="bottom-header__menu-list-item">Contact</li>
+              <li>
+                <a href="#overview" class="bottom-header__menu-list-item"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a href="#features" class="bottom-header__menu-list-item"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="#specs" class="bottom-header__menu-list-item">Specs</a>
+              </li>
+              <li>
+                <a href="#faq" class="bottom-header__menu-list-item">FAQ</a>
+              </li>
+              <li>
+                <a href="#contact" class="bottom-header__menu-list-item"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </header>
+      <main class="main">
+        <section class="section" id="overview">
+          Overview<br />
+          ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
 
-      <section class="section" id="overview">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
+        <section class="section" id="features">
+          Features <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
 
-      <section class="section" id="features">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
+        <section class="section" id="specs">
+          Specs <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
 
-      <section class="section" id="spaces">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
+        <section class="section" id="faq">
+          FAQ <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
 
-      <section class="section" id="faq">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
-
-      <section class="section" id="contact">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
-
-      <section class="section">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
-      <section class="section">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
-
-      <section class="section">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
-
-      <section class="section">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
-        officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
-        doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
-        sed asperiores porro?
-      </section>
+        <section class="section" id="contact">
+          Contact <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
+      </main>
     </div>
   </body>
 </html>
