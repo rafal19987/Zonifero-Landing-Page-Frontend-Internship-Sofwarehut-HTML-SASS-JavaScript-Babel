@@ -1,0 +1,21 @@
+.hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30px;
+  height: 30px;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__inner-span {
+    width: 90%;
+    height: 2px;
+    background: $primary_color;
+    transition: all 0.1s ease-in-out;
+  }
+}
