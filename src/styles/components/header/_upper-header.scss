@@ -12,7 +12,7 @@
 
   &__menu-container {
     display: flex;
-    width: 50%;
+    width: 60%;
   }
 
   &__menu-list {
@@ -49,6 +49,46 @@
       opacity: 0.9;
     }
   }
+}
+
+#selectLanguageBtn {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.select-lang-bar {
+  position: absolute;
+  top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 50px;
+  opacity: 0;
+  cursor: default;
+  transition: all 0.1s ease;
+
+  &--open {
+    opacity: 1;
+  }
+}
+
+.lang-option {
+  cursor: pointer;
+
+  &--selected {
+    font-weight: 600;
+  }
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .signin-button {
