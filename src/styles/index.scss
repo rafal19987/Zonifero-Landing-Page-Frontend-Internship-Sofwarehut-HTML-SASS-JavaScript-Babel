@@ -4,9 +4,8 @@
 @import 'typography';
 
 // components
-@import './components/header/header';
-@import './components//mobileMenu/mobile-menu';
-@import './components/main/main';
+@import './components/header';
+@import './components/content';
 
 .page_wrapper {
   min-height: 100vh;
