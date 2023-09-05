@@ -1,0 +1,41 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'typography';
+
+// components
+@import './components/header/header';
+@import './components//mobileMenu/mobile-menu';
+@import './components/main/main';
+
+.page_wrapper {
+  min-height: 100vh;
+  background-color: $background_color;
+}
+
+.scrollToSectionLink {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .upper-header,
+  .bottom-header {
+    display: none;
+  }
+
+  .header {
+    height: 100px;
+  }
+  .main {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile-header {
+    display: none;
+  }
+  .main {
+    margin-top: 200px;
+  }
+}
