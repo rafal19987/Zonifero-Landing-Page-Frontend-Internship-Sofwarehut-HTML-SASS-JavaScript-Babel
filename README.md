@@ -4,7 +4,7 @@ This project is a single landing page created using pure JavaScript, HTML, and S
 
 ## LIVE
 
-You can check out the live version here.
+You can check out the live version here: https://rafal19987.github.io/_Johny/
 
 ## HOW TO RUN
 
