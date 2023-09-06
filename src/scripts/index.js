@@ -12,8 +12,10 @@ import '../assets/desks.png';
 import '../assets/google_store_badge.png';
 import '../assets/apple_store_badge.png';
 import '../assets/hand.png';
+import '../assets/desk_icon.png';
 
 // features
 import './features/scrollToSelectedSection';
 import './features/openMobileMenu';
 import './features/selectPageLang';
+import './features/fetchAllArticlesForSlider';
