@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+  <script defer src="bundle.448f1b16297bb77e6534.js"></script></head>
+  <body>
+    <div class="page_wrapper">
+      <header class="header">
+        <!-- mobile header -->
+        <div class="mobile-header">
+          <div>
+            <img
+              src="zonifero_logo.png"
+              alt="landing mobile page logo"
+              width="30px"
+            />
+          </div>
+          <div class="mobile-header__dropdown-menu">
+            <span>zonifero WorkPlace</span>
+            <img src="arrow_down_icon.svg" alt="arrow down icon" />
+          </div>
+          <div
+            class="hamburger"
+            aria-label="Open menu"
+            aria-controls="mobileMenu"
+          >
+            <span class="hamburger__inner-span hamburger__first-span"></span>
+            <span class="hamburger__inner-span hamburger__second-span"></span>
+            <span class="hamburger__inner-span hamburger__third-span"></span>
+          </div>
+          <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__list-item">
+                <a href="#overview" class="mobile-menu__list-link">Overview</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="#features" class="mobile-menu__list-link">Features</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="#specs" class="mobile-menu__list-link">Specs</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="#faq" class="mobile-menu__list-link">FAQ</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="#contact" class="mobile-menu__list-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- mobile menu -->
+        </div>
+
+        <!-- desktop menu -->
+        <div class="upper-header">
+          <div class="upper-header__logo-container">
+            <img src="logo.png" alt="landing page logo" />
+          </div>
+          <div class="upper-header__menu-container">
+            <ul class="upper-header__menu-list">
+              <li class="upper-header__menu-list-item">Zenifero products</li>
+              <li class="upper-header__menu-list-item">Store</li>
+              <li class="upper-header__menu-list-item">Blog</li>
+              <li
+                id="selectLanguageBtn"
+                class="upper-header__menu-list-item"
+                role="button"
+                tabindex="0"
+                aria-label="Select page language"
+                aria-controls="selectLanguage"
+              >
+                <div class="icons-container">
+                  <img src="globe.png" alt="globe icon" />
+                  <img src="arrow_down_icon.svg" alt="arrow down icon" />
+                </div>
+                <div class="select-lang-bar">
+                  <span class="lang-option lang-option--selected">EN</span>
+                  <span class="lang-option">PL</span>
+                  <span class="lang-option">FR</span>
+                </div>
+              </li>
+              <li class="upper-header__menu-list-item signin-button">
+                Sign in
+              </li>
+            </ul>
+            <button class="upper-header__get-app-button">Get the app</button>
+          </div>
+        </div>
+        <div class="bottom-header">
+          <div class="bottom-header__menu-container">
+            <span class="bottom-header__manu-description"
+              >zonifero WorkPlace:</span
+            >
+            <ul class="bottom-header__menu-list">
+              <li>
+                <a href="#overview" class="bottom-header__menu-list-item"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a href="#features" class="bottom-header__menu-list-item"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="#specs" class="bottom-header__menu-list-item">Specs</a>
+              </li>
+              <li>
+                <a href="#faq" class="bottom-header__menu-list-item">FAQ</a>
+              </li>
+              <li>
+                <a href="#contact" class="bottom-header__menu-list-item"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section section-overview" id="overview">
+          <div class="section-overview__hero">
+            <div class="section-overview__hero-left-side">
+              <h1 class="section-overview__hero-headline">
+                Streamline your workplace
+              </h1>
+              <p class="section-overview__hero-description">
+                Effectively and quickly from your mobile device. Staying
+                connected has never been easier with zonifero WorkPlace.
+              </p>
+              <div class="hero-icons-container">
+                <img
+                  src="google_store_badge.png"
+                  alt="download via googleplay image"
+                />
+                <img
+                  src="apple_store_badge.png"
+                  alt="download via applestore image"
+                />
+              </div>
+            </div>
+            <div class="section-overview__hero-right-side">
+              <img src="hand.png" alt="desks image" class="hand-image" />
+              <img
+                src="desks.png"
+                alt="phone in hand image"
+                class="desks-image"
+              />
+            </div>
+          </div>
+          <div class="section-overview__cards-wrapper">
+            <article class="article">
+              <h2 class="article__headline">Managment</h2>
+              <p class="article__content">
+                Tools for real-time management of all your facilities and people
+                accross multiple sites. Ease, speed and efectiveness of
+                facilities communications.
+              </p>
+            </article>
+            <article class="article">
+              <h2 class="article__headline">Employees</h2>
+              <p class="article__content">
+                Improved productivity and satisfaction as your employees stay
+                informed, connected and can feed requests and updates in real
+                time.
+              </p>
+            </article>
+            <article class="article">
+              <h2 class="article__headline">Visitors</h2>
+              <p class="article__content">
+                A smooth and welcoming visitor experience - easy navigation
+                around your facilities.
+              </p>
+            </article>
+          </div>
+          <div class="section-overview__slider-wrapper">
+            <h4 class="section-overview__slider-headline">
+              Problem solving app
+            </h4>
+            <!-- Here we are fetching all articles with fetchAllArticlesForSlider.js -->
+          </div>
+        </section>
+
+        <section class="section section-features" id="features">
+          Features <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
+
+        <section class="section section-specs" id="specs">
+          Specs <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
+
+        <section class="section section-faq" id="faq">
+          FAQ <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
+
+        <section class="section section-constact" id="contact">
+          Contact <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae
+          officiis, perferendis ipsa reiciendis sequi consectetur? Esse, amet
+          doloremque, voluptatum laborum quo pariatur, fugit fugiat vel officia
+          sed asperiores porro?
+        </section>
+      </main>
+      <footer class="footer">Elegancka stopka</footer>
+    </div>
+  </body>
+</html>
