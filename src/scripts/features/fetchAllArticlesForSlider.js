@@ -1,30 +1,30 @@
-import { sliderArticles } from '../consts/sliderArticles';
+import { sliderArticles } from '../utils/constants/sliderArticles';
 
 const slider = document.querySelector('.section-overview__slider-wrapper');
 
 const fetchAllArticles = () => {
   sliderArticles.map((article) => {
-    const art = document.createElement('article');
-    art.setAttribute('class', 'slider__article');
+    const articleTag = document.createElement('article');
+    articleTag.setAttribute('class', 'slider__article');
 
-    const img = document.createElement('img');
-    img.setAttribute('src', 'desk_icon.png');
-    img.setAttribute('alt', 'article desk icon');
-    img.setAttribute('class', 'slider__article-image');
+    const imgTag = document.createElement('img');
+    imgTag.setAttribute('src', 'desk_icon.png');
+    imgTag.setAttribute('alt', 'article desk icon');
+    imgTag.setAttribute('class', 'slider__article-image');
 
-    const h3 = document.createElement('h3');
-    h3.setAttribute('class', 'slider__article-headline');
-    h3.innerText = article.headline;
+    const h3Tag = document.createElement('h3');
+    h3Tag.setAttribute('class', 'slider__article-headline');
+    h3Tag.innerText = article.headline;
 
-    const p = document.createElement('p');
-    p.setAttribute('class', 'slider__article-description');
-    p.innerText = article.description;
+    const pTag = document.createElement('p');
+    pTag.setAttribute('class', 'slider__article-description');
+    pTag.innerText = article.description;
 
-    art.appendChild(img);
-    art.appendChild(h3);
-    art.appendChild(p);
+    articleTag.appendChild(imgTag);
+    articleTag.appendChild(h3Tag);
+    articleTag.appendChild(pTag);
 
-    slider.appendChild(art);
+    slider.appendChild(articleTag);
   });
 };
 
