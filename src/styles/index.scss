@@ -10,6 +10,7 @@
 .page_wrapper {
   min-height: 100vh;
   background-color: $background_color;
+  overflow-x: hidden;
 }
 
 .scrollToSectionLink {
