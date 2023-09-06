@@ -1,2 +1,7 @@
-@import 'main';
-@import 'section';
+@import 'sections';
+
+.main {
+  width: 100vw;
+  height: 100%;
+  background: #fff;
+}
