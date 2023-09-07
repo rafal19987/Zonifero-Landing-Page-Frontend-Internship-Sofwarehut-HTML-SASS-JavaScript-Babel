@@ -1,0 +1,335 @@
+.section-specs {
+  &__first-segment,
+  &__second-segment,
+  &__third-segment,
+  &__fourth-segment,
+  &__fifth-segment,
+  &__sixth-segment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.first-segment {
+  &__title {
+    margin-top: 60px;
+    font-size: 30px;
+    font-family: $primary_font_family;
+    width: 100%;
+  }
+  &__description {
+    margin-top: 30px;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    line-height: $line_height_xs;
+    width: 100%;
+  }
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 300px;
+  }
+  &__table {
+    margin-top: 40px;
+    margin-left: 120px;
+  }
+  &__acordeon {
+    padding-top: 178px;
+    width: 100%;
+    list-style-type: none;
+  }
+}
+
+.table {
+  &__body {
+  }
+  &__first-col {
+  }
+  &__second-col {
+  }
+  &__third-col {
+    width: fit-content;
+  }
+  &__row-title {
+    width: fit-content;
+  }
+  &__row-description {
+  }
+}
+
+.acordeon {
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in;
+
+    /* &:last-child {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    } */
+
+    &-title {
+      font-family: $primary_font_family;
+      font-weight: $font_bold;
+    }
+    &-arrow {
+      transition: all 0.2s ease-in;
+    }
+    &-details {
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      height: 50px;
+      opacity: 0;
+      transition: all 0.2s ease-in;
+      transform: translateY(-20px);
+    }
+
+    &--active {
+      margin-bottom: 50px;
+      & h3 {
+        color: $primary_color;
+      }
+      & img {
+        transform: rotate(180deg);
+      }
+      & p {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.second-segment {
+  &__title {
+    margin-top: 60px;
+    font-size: 30px;
+    font-family: $primary_font_family;
+    width: 80%;
+  }
+  &__description {
+    margin-top: 30px;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    line-height: $line_height_xs;
+    width: 100%;
+  }
+  &__download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    height: 100%;
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background: $background_color;
+  }
+}
+
+.download {
+  &__title {
+    font-size: $font_m;
+    font-family: $primary_font_family;
+    font-weight: $font_bold;
+    line-height: $line_height_m;
+  }
+  &__description {
+    width: 55%;
+    text-align: center;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    line-height: $line_height_s;
+  }
+  &__details-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+
+    & hr {
+      width: 1px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+  }
+  &__btn {
+    padding: 20px 60px 20px 60px;
+    background: $primary_color;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.third-segment {
+  &__title {
+    margin-top: 120px;
+    font-size: 36px;
+    font-family: $primary_font_family;
+    font-weight: $font_bold;
+    line-height: $line_height_m;
+    width: 70%;
+  }
+  &__description {
+    margin-top: 60px;
+    font-size: 22px;
+    font-family: $secondary_font_family;
+    font-weight: $font_regular;
+    line-height: $line_height_s;
+  }
+  &__image {
+    margin-top: 40px;
+    align-self: center;
+  }
+  &__sensor-title {
+    font-family: $primary_font_family;
+    font-weight: $font_regular;
+    line-height: $line_height_s;
+  }
+  &__sensor-description {
+    margin-top: 30px;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    line-height: $line_height_s;
+  }
+}
+
+.fourth-segment {
+  &__title {
+    margin-top: 120px;
+    font-size: 36px;
+    font-family: $primary_font_family;
+    font-weight: $font_bold;
+    line-height: $line_height_m;
+    width: 70%;
+  }
+  &__partners-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  &__article {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.article {
+  &__image {
+  }
+  &__description {
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_regular;
+    line-height: $line_height_xs;
+    margin-top: 40px;
+  }
+}
+
+.fifth-segment {
+  &__cost-optimalization {
+    margin-top: 120px;
+  }
+  &__shop-zonifero {
+    width: 100vw;
+    margin-top: 60px;
+    margin-left: -20px;
+    padding: 60px 20px 40px 20px;
+    background: $background_color;
+  }
+}
+
+.cost-optimalization {
+  &__title {
+    font-size: 36px;
+    font-family: $primary_font_family;
+    font-weight: $font_bold;
+    line-height: $line_height_m;
+    width: 70%;
+  }
+  &__description {
+    margin-top: 60px;
+    font-size: 22px;
+    font-family: $secondary_font_family;
+    font-weight: $font_regular;
+    line-height: $line_height_s;
+  }
+  &__image {
+    align-self: end;
+    margin-top: 40px;
+    width: 120%;
+  }
+  &__percentage-number {
+    margin-top: 30px;
+    font-size: 36px;
+    font-family: $primary_font_family;
+    font-weight: $font_bold;
+    line-height: $line_height_m;
+    width: 70%;
+  }
+  &__benefits-description {
+    margin-top: 30px;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    line-height: $line_height_xs;
+    width: 100%;
+  }
+}
+
+.shop-zonifero {
+  &__title {
+    font-size: 36px;
+    font-family: $primary_font_family;
+    font-weight: $font_bold;
+    line-height: $line_height_m;
+  }
+  &__description {
+    margin-top: 30px;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    line-height: $line_height_xs;
+    width: 100%;
+  }
+  &__image {
+    width: 106%;
+  }
+  &__btn {
+    display: block;
+    margin-top: 60px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 60px 20px 60px;
+    background: $primary_color;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    color: white;
+    text-decoration: none;
+  }
+}
