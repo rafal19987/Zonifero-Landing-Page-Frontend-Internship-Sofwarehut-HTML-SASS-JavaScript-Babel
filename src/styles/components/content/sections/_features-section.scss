@@ -6,17 +6,17 @@
   &__top-backgound {
     position: relative;
     width: 100vw;
-    height: 100%;
+    height: 450px;
 
     & img {
-      object-fit: cover;
+      object-fit: fill;
     }
   }
 
   &__phone-image-container {
     position: absolute;
     top: 0;
-    right: 360px;
+    right: 19%;
   }
   &__navigation-buttons-container {
     position: absolute;
@@ -60,7 +60,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 370px;
+    gap: 40px;
+    min-height: 370px;
+    max-height: 100%;
     background-color: $primary_color;
   }
 
@@ -70,7 +72,7 @@
     width: 65%;
     height: 70%;
     color: #fff;
-    margin-left: 360px;
+    margin-left: 20%;
     padding-top: 100px;
   }
 
@@ -108,83 +110,73 @@
   }
 }
 
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .section-features {
-
     &__top-backgound {
-  
     }
     &__phone-image-container {
-  
+      display: none;
     }
     &__navigation-buttons-container {
-  
+      top: 490px;
+      height: 40px;
     }
     &__navigation-left-button {
-      
+      width: 40px;
     }
     &__navigation-right-button {
-  
+      width: 40px;
     }
     &__bottom-layout {
-  
     }
     &__text-container {
-  
+      padding-top: 140px;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      margin-left: 0;
+      padding-left: 20px;
+      padding-right: 20px;
     }
     &__big-text {
-  
+      width: 100%;
+      font-size: 36px;
     }
     &__small-text {
-  
+      width: 100%;
+      font-size: 16px;
     }
     &__bottom-text-container {
-  
     }
     &__bottom-text {
-  
+      width: 100%;
     }
   }
-  
 }
 
 @media screen and (max-width: 500px) {
   .section-features {
-
     &__top-backgound {
-  
     }
     &__phone-image-container {
-  
     }
     &__navigation-buttons-container {
-  
     }
     &__navigation-left-button {
-      
     }
     &__navigation-right-button {
-  
     }
     &__bottom-layout {
-  
     }
     &__text-container {
-  
     }
     &__big-text {
-  
     }
     &__small-text {
-  
     }
     &__bottom-text-container {
-  
     }
     &__bottom-text {
-  
     }
   }
-  
 }
- */
