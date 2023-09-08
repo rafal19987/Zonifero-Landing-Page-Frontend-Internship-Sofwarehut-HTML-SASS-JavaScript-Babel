@@ -2,10 +2,12 @@
 @import 'fonts';
 @import 'variables';
 @import 'typography';
+@import 'metrics';
 
 // components
 @import './components/header';
 @import './components/content';
+@import './components/footer';
 
 .page_wrapper {
   min-height: 100vh;
