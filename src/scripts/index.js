@@ -5,4 +5,4 @@ import './features/scrollToSelectedSection';
 import './features/openMobileMenu';
 import './features/selectPageLang';
 import './features/fetchAllArticlesForSlider';
-import './features/toggleAcordeonActiveField';
+import './features/toggleAccordionActiveField';
