@@ -7,3 +7,4 @@ import './features/selectPageLang';
 import './features/fetchAccordionItems';
 import './features/toggleAccordionActiveField';
 import './features/fetchSliderItems';
+import './features/formValidation';
