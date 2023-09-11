@@ -1,49 +1,50 @@
 .section-contact {
-  margin-top: 90px;
+  margin-top: $metric-xl;
   width: 100vw;
-  padding-bottom: 90px;
+  padding-bottom: $metric-xl;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 1500px;
+    padding-left: 16%;
+  }
+
   &__change-forms-btns-container {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: $metric-s;
+    padding-right: $metric-s;
+    @include desktop {
+      margin-top: $metric-xxl;
+      max-width: 300px;
+      align-self: center;
+    }
   }
   &__contact-form-btn {
-    width: 100%;
-    font-family: $secondary_font_family;
-    font-size: $font_s;
-
+    @include tab;
     &--active {
-      position: relative;
-      font-weight: $font_bold;
-
-      &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 32px;
-        height: 3px;
-        background: $secondary_color;
-      }
+      @include tab--active;
     }
   }
   &__form {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 60px;
+    padding-left: $metric-s;
+    padding-right: $metric-s;
+    margin-top: $metric-l;
     display: flex;
     flex-direction: column;
+    @include desktop {
+      width: 100%;
+      align-items: center;
+    }
   }
   &__zonifero-head {
+    @include h4;
     margin-top: $metric-l;
     padding-bottom: $metric-m;
     padding-left: $metric-s;
-    font-size: $font_s;
-    font-family: $secondary_font_family;
-    font-weight: $font_regular;
-    line-height: $line_height_s;
   }
   &__zonifero-products-slider-wrapper {
     display: flex;
@@ -55,45 +56,27 @@
 
 .form {
   &__label {
-    margin-top: 30px;
-    font-size: 13px;
-    font-family: $secondary_font_family;
-    font-weight: $font_light;
-    &::after {
-      content: '*';
-      padding-left: 2px;
-      color: $primary_color;
-    }
-    &--not-required::after {
-      content: '';
-    }
+    @include label;
   }
   &__input-text {
-    margin-top: 30px;
-    border: none;
-    border-bottom: 1px dotted #000;
-    padding-bottom: 10px;
-    font-size: $font_l;
-    font-family: $secondary_font_family;
-    font-weight: $font_regular;
+    @include input;
   }
-
+  &__message-container {
+    @include desktop {
+      width: 100%;
+    }
+  }
   &__submit-btn {
     position: relative;
-    margin-top: 40px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: none;
-    background: $primary_color;
-    font-size: $font_s;
-    font-family: $secondary_font_family;
-    font-weight: $font_regular;
-    color: white;
-    text-decoration: none;
-    outline: none;
+    margin-top: $metric-m;
+    @include button;
+  }
+}
+
+#message {
+  @include desktop {
+    width: 100%;
+    height: 50px;
   }
 }
 
@@ -104,42 +87,19 @@
   height: 100%;
   &__small-headline {
     align-self: start;
-    font-size: $font_m;
-    font-family: $secondary_font_family;
-    font-weight: $font_bold;
-    line-height: $line_height_s;
+    @include h2;
   }
 
   &__big-headline {
     align-self: start;
     color: $primary_color;
-    font-size: 50px;
-    font-family: $primary_font_family;
-    font-weight: $font_light;
-    line-height: 40px;
+    @include h1;
   }
   &__description {
     padding-top: $metric-base;
-    font-size: $font_s;
-    font-family: $secondary_font_family;
-    font-weight: $font_light;
-    line-height: $line_height_s;
+    @include paragraph;
   }
   &__image {
     padding-top: $metric-base;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .section-contact {
-    &__form {
-      align-items: center;
-    }
-  }
-  .form {
-    &__firstName-and-familyName-container {
-      display: flex;
-      gap: 20px;
-    }
   }
 }
