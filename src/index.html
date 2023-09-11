@@ -23,7 +23,7 @@
             <span>zonifero WorkPlace</span>
             <img src="./assets/arrow_down_icon.svg" alt="arrow down icon" />
           </div>
-          <div tabindex="0" class="hamburger" aria-label="Open mobile menu">
+          <div tabindex="0" class="hamburger">
             <span class="hamburger__inner-span hamburger__first-span"></span>
             <span class="hamburger__inner-span hamburger__second-span"></span>
             <span class="hamburger__inner-span hamburger__third-span"></span>
@@ -224,8 +224,8 @@
 
         <section class="section section-specs" id="specs">
           <div class="section-specs__first-segment">
-            <div class="flexinioo">
-              <div>
+            <div class="first-segment__flexinioo">
+              <div class="first-segment__text-container">
                 <h2 class="first-segment__title">Room booking</h2>
                 <h4 class="first-segment__description">
                   zonifero business supports meeting rooms booking. Reserations
@@ -234,6 +234,11 @@
                   reservations can also be made in companies that are not
                   familiar with Office 365 or G Suite serve.
                 </h4>
+                <img
+                  src="./assets/mob_room_booking.png"
+                  alt="room booking phone image"
+                  class="first-segment__image"
+                />
               </div>
               <img
                 src="./assets/Space_Gray.png"
@@ -257,11 +262,6 @@
                 </tbody>
               </table>
             </div>
-            <img
-              src="./assets/mob_room_booking.png"
-              alt="room booking phone image"
-              class="first-segment__image"
-            />
             <ul class="first-segment__accordion">
               <!-- Here we fetch all accordion items via accordion.js script-->
             </ul>
@@ -319,7 +319,7 @@
               alt="sensor image"
               class="third-segment__image-desktop mobile-hidden"
             />
-            <div class="flexinioo">
+            <div class="flex gap">
               <div>
                 <h3 class="third-segment__sensor-title">Sensors</h3>
                 <p class="third-segment__sensor-description">
@@ -348,7 +348,9 @@
             <h2 class="fourth-segment__title">Partners</h2>
             <p class="fourth-segment__description mobile-hidden">
               We only work with best. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Deleniti, quia quaerat.
+              adipisicing elit. Deleniti, quia quaerat. We only work with best.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+              quia quaerat.
             </p>
             <div class="fourth-segment__partners-container">
               <article class="fourth-segment__article">
@@ -388,29 +390,50 @@
           </div>
           <div class="section-specs__fifth-segment">
             <div class="fifth-segment__cost-optimalization">
-              <h2 class="cost-optimalization__title">
-                Zoptymalizuj koszty i ergonomię biura z Zonifero
-              </h2>
-              <h3 class="cost-optimalization__description">
-                Zarządzaj świadomie rozwojem biura, optymalizuj koszty związane
-                z usługami i powierzchnią, a także podnoś komfort pracy dzięki
-                jednemu systemowi.
-              </h3>
+              <div>
+                <h2 class="cost-optimalization__title">
+                  Zoptymalizuj koszty i ergonomię biura z Zonifero
+                </h2>
+                <h3 class="cost-optimalization__description">
+                  Zarządzaj świadomie rozwojem biura, optymalizuj koszty
+                  związane z usługami i powierzchnią, a także podnoś komfort
+                  pracy dzięki jednemu systemowi.
+                </h3>
+              </div>
               <img
                 src="./assets/mob_devices copy.png"
                 alt="mobile devices image"
                 class="cost-optimalization__image"
               />
-
-              <h3 class="cost-optimalization__percentage-number">523%</h3>
-              <h4 class="cost-optimalization__benefits-description">
-                Długoterminowe korzyści z wdrożenia Zonifero wynoszą co najmiej
-                523%* w stosunku do wydanej kwoty. System został zbudowany w
-                oparciu o doświadczenia naszych użytkowników, przez co
-                rozwiązuje praktycznie każdy, powstały na przestrzeni lat
-                problem. Ten fakt jednak nie powstrzymuje Nas przed ciągłbym
-                rozwijaniem aplikacji Zonifero.
-              </h4>
+              <img
+                src="./assets/devices.png"
+                alt="devices image"
+                class="cost-optimalization__desktop-image mobile-hidden"
+              />
+              <div class="flex">
+                <div>
+                  <h3 class="cost-optimalization__percentage-number">523%</h3>
+                  <h4 class="cost-optimalization__benefits-description">
+                    Długoterminowe korzyści z wdrożenia Zonifero wynoszą co
+                    najmiej 523%* w stosunku do wydanej kwoty. System został
+                    zbudowany w oparciu o doświadczenia naszych użytkowników,
+                    przez co rozwiązuje praktycznie każdy, powstały na
+                    przestrzeni lat problem. Ten fakt jednak nie powstrzymuje
+                    Nas przed ciągłbym rozwijaniem aplikacji Zonifero.
+                  </h4>
+                </div>
+                <div class="mobile-hidden">
+                  <h3 class="cost-optimalization__percentage-number">523%</h3>
+                  <h4 class="cost-optimalization__benefits-description">
+                    Długoterminowe korzyści z wdrożenia Zonifero wynoszą co
+                    najmiej 523%* w stosunku do wydanej kwoty. System został
+                    zbudowany w oparciu o doświadczenia naszych użytkowników,
+                    przez co rozwiązuje praktycznie każdy, powstały na
+                    przestrzeni lat problem. Ten fakt jednak nie powstrzymuje
+                    Nas przed ciągłbym rozwijaniem aplikacji Zonifero.
+                  </h4>
+                </div>
+              </div>
             </div>
             <div class="fifth-segment__shop-zonifero">
               <h3 class="shop-zonifero__title">Shop zonifero accesories</h3>
@@ -566,33 +589,36 @@ Hello :) I&apos;m just wondering if you could..</textarea
           </div>
         </section>
       </main>
+
       <footer class="footer">
-        <div class="footer__list-container">
-          <h3 class="footer__list-headline">Products</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">zonifero business</li>
-            <li class="footer__list-item">zonifero real estate</li>
-            <li class="footer__list-item">zonifero lobby</li>
-            <li class="footer__list-item">zonifero services</li>
-            <li class="footer__list-item">zonifero tv</li>
-          </ul>
-        </div>
-        <div class="footer__list-container">
-          <h3 class="footer__list-headline">Resources</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">Documentation</li>
-            <li class="footer__list-item">FAQ</li>
-            <li class="footer__list-item">Blog</li>
-            <li class="footer__list-item">Media</li>
-          </ul>
-        </div>
-        <div class="footer__list-container">
-          <h3 class="footer__list-headline">About</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">About us</li>
-            <li class="footer__list-item">Company</li>
-            <li class="footer__list-item">Blog</li>
-          </ul>
+        <div class="footer__all-lists-wrapper">
+          <div class="footer__list-container">
+            <h3 class="footer__list-headline">Products</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">zonifero business</li>
+              <li class="footer__list-item">zonifero real estate</li>
+              <li class="footer__list-item">zonifero lobby</li>
+              <li class="footer__list-item">zonifero services</li>
+              <li class="footer__list-item">zonifero tv</li>
+            </ul>
+          </div>
+          <div class="footer__list-container">
+            <h3 class="footer__list-headline">Resources</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">Documentation</li>
+              <li class="footer__list-item">FAQ</li>
+              <li class="footer__list-item">Blog</li>
+              <li class="footer__list-item">Media</li>
+            </ul>
+          </div>
+          <div class="footer__list-container">
+            <h3 class="footer__list-headline">About</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">About us</li>
+              <li class="footer__list-item">Company</li>
+              <li class="footer__list-item">Blog</li>
+            </ul>
+          </div>
         </div>
         <hr class="footer__hr" />
         <div class="footer__logo-ex-container">
@@ -603,7 +629,6 @@ Hello :) I&apos;m just wondering if you could..</textarea
           />
         </div>
       </footer>
-      <div class="list"></div>
     </div>
   </body>
 </html>
