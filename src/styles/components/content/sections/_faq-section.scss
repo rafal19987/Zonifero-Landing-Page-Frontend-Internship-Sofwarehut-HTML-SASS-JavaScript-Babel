@@ -7,6 +7,7 @@
 
   @include desktop {
     display: flex;
+    gap: $metric-l;
     align-items: start;
     padding-left: 16%;
     max-width: 1500px;
@@ -18,7 +19,8 @@
     font-weight: $font_bold;
     line-height: 36px;
     @include desktop {
-      @include h2;
+      @include big-headline;
+      width: 40%;
     }
   }
   &__highlight_question {
