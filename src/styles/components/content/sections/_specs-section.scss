@@ -342,6 +342,9 @@
     }
   }
   &__shop-zonifero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
     margin-top: $metric-l;
     margin-left: -$metric-s;
@@ -444,6 +447,8 @@
   }
   &__image {
     width: 106%;
+    max-width: 400px;
+    align-self: flex-end;
   }
   &__btn {
     @include button;
