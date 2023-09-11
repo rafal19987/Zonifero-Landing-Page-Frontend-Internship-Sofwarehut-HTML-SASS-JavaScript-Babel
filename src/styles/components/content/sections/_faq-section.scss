@@ -5,12 +5,21 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  @include desktop {
+    display: flex;
+    align-items: start;
+    padding-left: 16%;
+    max-width: 1500px;
+  }
   &__title {
     width: 70%;
     font-size: 36px;
     font-family: $primary_font_family;
     font-weight: $font_bold;
     line-height: 36px;
+    @include desktop {
+      @include h2;
+    }
   }
   &__highlight_question {
     margin-top: 60px;
@@ -18,6 +27,9 @@
     font-family: $primary_font_family;
     font-weight: $font_light;
     line-height: $line_height_xs;
+    @include desktop {
+      margin-top: 0;
+    }
   }
   &__answer {
     margin-top: 20px;
@@ -37,6 +49,10 @@
     flex-direction: column;
     gap: 10px;
     list-style-type: none;
+    @include desktop {
+      margin-top: 0;
+      width: 50%;
+    }
   }
   &__question {
     font-size: 36px;
