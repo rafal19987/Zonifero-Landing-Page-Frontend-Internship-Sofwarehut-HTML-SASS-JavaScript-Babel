@@ -1,5 +1,6 @@
 @mixin h1 {
-  font-size: $font_xl;
+  font-size: clamp(45px, 10vw, $font_xl);
+
   font-family: $primary_font_family;
   line-height: $line_height_xl;
 }
@@ -37,15 +38,16 @@
 }
 
 @mixin description-text {
-  font-size: $font_l;
+  font-size: clamp(1.5rem, 2vw, $font_l);
+  // font-size: $font_l;
   font-family: $secondary_font_family;
   font-weight: $font_regular;
   line-height: $line_height_m;
 }
 
 @mixin big-headline {
-  font-size: $font_l;
-  font-family: $secondary_font_family;
+  font-size: $line_height_l;
+  font-family: $primary_font_family;
   font-weight: $font_regular;
   line-height: $line_height_m;
 }
