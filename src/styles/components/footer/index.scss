@@ -8,6 +8,15 @@
   background-color: $primary_color;
   scroll-margin-top: 100px;
   color: $white;
+
+  &__all-lists-wrapper {
+    @include tablet {
+      display: flex;
+      justify-content: space-evenly;
+      width: 80%;
+    }
+  }
+
   &__list-container {
     height: 100%;
     padding-left: 20px;
@@ -30,6 +39,11 @@
       font-size: $font_s;
       font-family: $secondary_font_family;
       font-weight: $font_light;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+      }
     }
   }
   &__hr {
