@@ -10,21 +10,14 @@
       width: 36%;
     }
     &-headline {
+      @include h1;
       margin-top: 170px;
       color: $primary_color;
-      font-family: $primary_font_family;
-      font-size: $font_xl;
-      font-weight: $font_bold;
-      line-height: $line_height_xl;
       word-wrap: normal;
     }
     &-description {
       margin-top: 50px;
-      color: #000;
-      font-family: $secondary_font_family;
-      font-size: $font_l;
-      font-weight: $font_regular;
-      line-height: $line_height_m;
+      @include description-text;
     }
     &-icons-container {
       display: flex;
@@ -88,6 +81,8 @@
 .hand-image {
   position: absolute;
   width: 30vw;
+  max-width: 615px;
+  max-height: 827px;
   bottom: -100px;
   right: 20%;
   z-index: 2;
@@ -95,9 +90,11 @@
 
 .desks-image {
   position: absolute;
-  width: 40vw;
   bottom: 50px;
   right: 70px;
+  width: 40vw;
+  max-width: 830px;
+  max-height: 516px;
   z-index: 1;
 }
 
