@@ -24,46 +24,10 @@
   }
 
   &__menu-list-item {
-    position: relative;
-    height: fit-content;
-    padding: 4px;
-    text-decoration: none;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 6px;
-      bottom: 0;
-      height: 4px;
-      width: 0;
-      background: $secondary_color;
-      transition: all 0.2s ease-in-out;
-    }
-
-    &:hover::after {
-      width: 40%;
-    }
+    @include tab;
 
     &--active {
-      position: relative;
-      font-size: $font_s;
-      font-weight: $font_bold;
-      color: $primary_text_color;
-      transition: none;
-
-      &::after {
-        content: '';
-        position: absolute;
-        left: 6px;
-        bottom: 0;
-        height: 4px;
-        width: 40%;
-        background: $secondary_color;
-      }
+      @include tab--active;
     }
   }
 }
