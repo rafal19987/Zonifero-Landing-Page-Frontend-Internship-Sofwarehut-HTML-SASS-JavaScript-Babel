@@ -9,7 +9,9 @@ const fetchSliderItems = () => {
     const newArticle = SliderItem(headline, description);
     HTMLfragment.push(newArticle);
   });
-  slider.innerHTML = HTMLfragment;
+
+  const HTMLfragmentWithoutSeparatingComma = HTMLfragment.join(' ');
+  slider.innerHTML = HTMLfragmentWithoutSeparatingComma;
 };
 
 fetchSliderItems();

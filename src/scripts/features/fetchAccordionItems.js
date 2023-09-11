@@ -9,7 +9,10 @@ const fetchAccordionItems = () => {
     const newContent = AccordionItem(title, details);
     HTMLfragment.push(newContent);
   });
-  accordion.innerHTML = HTMLfragment;
+
+  const HTMLfragmentWithoutSeparatingComma = HTMLfragment.join(' ');
+
+  accordion.innerHTML = HTMLfragmentWithoutSeparatingComma;
 };
 
 fetchAccordionItems();
