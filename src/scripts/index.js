@@ -4,5 +4,6 @@ import '../styles/index.scss';
 import './features/scrollToSelectedSection';
 import './features/openMobileMenu';
 import './features/selectPageLang';
-import './features/fetchAllArticlesForSlider';
+import './features/fetchAccordionItems';
 import './features/toggleAccordionActiveField';
+import './features/fetchSliderItems';
