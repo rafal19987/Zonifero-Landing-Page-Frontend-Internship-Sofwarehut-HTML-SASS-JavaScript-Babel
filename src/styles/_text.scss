@@ -1,0 +1,136 @@
+@mixin h1 {
+  font-size: $font_xl;
+  font-family: $primary_font_family;
+  line-height: $line_height_xl;
+}
+
+@mixin h2 {
+  font-size: $font_l;
+  font-family: $primary_font_family;
+  font-weight: $font_light;
+  line-height: $line_height_m;
+}
+
+@mixin h3 {
+  font-family: $primary_font_family;
+  font-size: $font_m;
+  line-height: $line_height_s;
+}
+
+@mixin h4 {
+  font-family: $secondary_font_family;
+  font-size: $font_s;
+  line-height: $line_height_s;
+}
+
+@mixin h5 {
+}
+
+@mixin h6 {
+}
+
+@mixin paragraph {
+  font-size: $font_s;
+  font-family: $secondary_font_family;
+  font-weight: $font_light;
+  line-height: $line_height_xs;
+}
+
+@mixin description-text {
+  font-size: $font_l;
+  font-family: $secondary_font_family;
+  font-weight: $font_regular;
+  line-height: $line_height_m;
+}
+
+@mixin big-headline {
+  font-size: $font_l;
+  font-family: $secondary_font_family;
+  font-weight: $font_regular;
+  line-height: $line_height_m;
+}
+
+@mixin tab {
+  position: relative;
+  height: fit-content;
+  padding: 4px;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background: $secondary_color;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 40%;
+  }
+}
+
+@mixin tab--active {
+  @include tab;
+
+  position: relative;
+  font-size: $font_s;
+  font-weight: $font_bold;
+  color: $primary_text_color;
+  transition: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    bottom: 0;
+    height: 4px;
+    width: 40%;
+    background: $secondary_color;
+  }
+}
+
+@mixin button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $metric-s $metric-l $metric-s $metric-l;
+  background: $primary_color;
+  max-width: 250px;
+  font-family: $secondary_font_family;
+  font-size: $font_s;
+  font-weight: $font_light;
+  color: white;
+  text-decoration: none;
+}
+
+@mixin input {
+  margin-top: 30px;
+  border: none;
+  border-bottom: 1px dotted #000;
+  padding-bottom: 10px;
+  font-size: $font_l;
+  font-family: $secondary_font_family;
+  font-weight: $font_regular;
+}
+
+@mixin label {
+  margin-top: 30px;
+  font-size: 13px;
+  font-family: $secondary_font_family;
+  font-weight: $font_light;
+  &::after {
+    content: '*';
+    padding-left: 2px;
+    color: $primary_color;
+  }
+  &--not-required::after {
+    content: '';
+  }
+}
