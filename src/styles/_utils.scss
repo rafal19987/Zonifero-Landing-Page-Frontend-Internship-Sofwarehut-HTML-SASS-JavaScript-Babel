@@ -1,0 +1,41 @@
+.mobile-hidden {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.desktop-hidden {
+  @include mobile {
+    display: block;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.gap {
+  gap: 0;
+
+  @include desktop {
+    gap: 100px;
+  }
+}

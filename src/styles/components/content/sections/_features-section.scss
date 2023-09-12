@@ -9,31 +9,64 @@
     height: 450px;
 
     & img {
-      object-fit: fill;
+      object-fit: cover;
+      width: 100%;
+      height: 500px;
     }
   }
 
   &__phone-image-container {
     position: absolute;
-    top: 0;
-    right: 19%;
+    top: 200px;
+    left: 17%;
+    width: 200px;
+    height: 300px;
+
+    @include tablet {
+      left: 35%;
+    }
+
+    @include desktop {
+      width: 400px;
+      height: 650px;
+      top: 0;
+      left: auto;
+      right: 19%;
+    }
+
+    & img {
+      object-fit: cover;
+    }
   }
   &__navigation-buttons-container {
     position: absolute;
-    top: 470px;
-    bottom: auto;
+    top: 480px;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    height: $metric-m;
+    padding-right: 0;
+
+    @include tablet {
+      padding-right: 18px;
+    }
+    @include desktop {
+      height: $metric-l;
+      top: 470px;
+    }
   }
   &__navigation-left-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
+    width: $metric-m;
     height: 100%;
     background: #fff;
+
+    @include desktop {
+      width: $metric-l;
+    }
+
     & img {
       transform: rotate(90deg);
     }
@@ -45,9 +78,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
+    width: $metric-m;
     height: 100%;
     background: #fff;
+
+    @include desktop {
+      width: $metric-l;
+    }
+
     & img {
       transform: rotate(-90deg);
     }
@@ -68,115 +106,68 @@
 
   &__text-container {
     display: flex;
-    justify-content: space-between;
-    width: 65%;
-    height: 70%;
-    color: #fff;
-    margin-left: 20%;
-    padding-top: 100px;
+    flex-direction: column;
+    width: 100%;
+    padding-left: $metric-s;
+    padding-right: $metric-m;
+    padding-top: $metric-xxl;
+
+    @include desktop {
+      flex-direction: row;
+      padding-left: 19%;
+      gap: $metric-xxl;
+    }
   }
 
   &__big-text {
-    width: 500px;
-    height: fit-content;
-    font-size: 50px;
-    font-family: $primary_font_family;
-    font-weight: $font_bold;
+    @include h2;
+    color: $white;
+    width: 100%;
+
+    @include desktop {
+      @include big-headline;
+      line-height: 50px;
+      width: 500px;
+    }
   }
   &__small-text {
-    width: 600px;
-    align-self: flex-end;
-    font-size: $font_s;
-    font-family: $secondary_font_family;
-    font-weight: $font_light;
-    line-height: $line_height_xs;
+    @include paragraph;
+    color: $white;
+    padding-top: $metric-l;
+
+    @include desktop {
+      padding-top: $metric-xl;
+      width: 600px;
+    }
   }
   &__bottom-text-container {
     display: flex;
-    align-items: center;
+    width: 100%;
     justify-content: center;
+
+    @include desktop {
+      padding-top: $metric-l;
+    }
   }
   &__bottom-text {
-    width: 25%;
-    padding: 20px;
+    @include paragraph;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: $metric-s;
     border-top: 2px dotted rgba(255, 255, 255, 0.2);
-    text-align: center;
-    color: #fff;
+    color: $white;
     text-decoration: none;
+
+    @include desktop {
+      padding-left: $metric-l;
+      padding-right: $metric-l;
+      width: fit-content;
+    }
+
     &:hover {
       cursor: pointer;
       color: rgba(255, 255, 255, 0.8);
-    }
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .section-features {
-    &__top-backgound {
-    }
-    &__phone-image-container {
-      display: none;
-    }
-    &__navigation-buttons-container {
-      top: 490px;
-      height: 40px;
-    }
-    &__navigation-left-button {
-      width: 40px;
-    }
-    &__navigation-right-button {
-      width: 40px;
-    }
-    &__bottom-layout {
-    }
-    &__text-container {
-      padding-top: 140px;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-      margin-left: 0;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-    &__big-text {
-      width: 100%;
-      font-size: 36px;
-    }
-    &__small-text {
-      width: 100%;
-      font-size: 16px;
-    }
-    &__bottom-text-container {
-    }
-    &__bottom-text {
-      width: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .section-features {
-    &__top-backgound {
-    }
-    &__phone-image-container {
-    }
-    &__navigation-buttons-container {
-    }
-    &__navigation-left-button {
-    }
-    &__navigation-right-button {
-    }
-    &__bottom-layout {
-    }
-    &__text-container {
-    }
-    &__big-text {
-    }
-    &__small-text {
-    }
-    &__bottom-text-container {
-    }
-    &__bottom-text {
     }
   }
 }

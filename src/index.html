@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Rafał Izdebski" />
+    <meta name="description" content="Landing page for zonifero" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/myFavicon.svg" sizes="16x16" />
-
-    <title>Landing Page</title>
+    <link rel="icon" href="favicon.ico" sizes="16x16" />
+    <title>Zonifero</title>
   </head>
   <body>
     <div class="page_wrapper">
       <header class="header">
-        <!-- mobile header -->
         <div class="mobile-header">
           <div>
             <img
@@ -23,16 +23,12 @@
             <span>zonifero WorkPlace</span>
             <img src="./assets/arrow_down_icon.svg" alt="arrow down icon" />
           </div>
-          <div
-            class="hamburger"
-            aria-label="Open menu"
-            aria-controls="mobileMenu"
-          >
+          <div tabindex="0" class="hamburger">
             <span class="hamburger__inner-span hamburger__first-span"></span>
             <span class="hamburger__inner-span hamburger__second-span"></span>
             <span class="hamburger__inner-span hamburger__third-span"></span>
           </div>
-          <div class="mobile-menu">
+          <nav class="mobile-menu">
             <ul class="mobile-menu__list">
               <li class="mobile-menu__list-item">
                 <a href="#overview" class="mobile-menu__list-link">Overview</a>
@@ -50,16 +46,13 @@
                 <a href="#contact" class="mobile-menu__list-link">Contact</a>
               </li>
             </ul>
-          </div>
-          <!-- mobile menu -->
+          </nav>
         </div>
-
-        <!-- desktop menu -->
         <div class="upper-header">
           <div class="upper-header__logo-container">
             <img src="./assets/logo.png" alt="landing page logo" />
           </div>
-          <div class="upper-header__menu-container">
+          <nav class="upper-header__menu-container">
             <ul class="upper-header__menu-list">
               <li class="upper-header__menu-list-item">Zenifero products</li>
               <li class="upper-header__menu-list-item">Store</li>
@@ -90,10 +83,10 @@
               </li>
             </ul>
             <button class="upper-header__get-app-button">Get the app</button>
-          </div>
+          </nav>
         </div>
         <div class="bottom-header">
-          <div class="bottom-header__menu-container">
+          <nav class="bottom-header__menu-container">
             <span class="bottom-header__manu-description"
               >zonifero WorkPlace:</span
             >
@@ -120,7 +113,7 @@
                 >
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </header>
       <main class="main">
@@ -187,7 +180,7 @@
             <h4 class="section-overview__slider-headline">
               Problem solving app
             </h4>
-            <!-- Here we are fetching all articles with fetchAllArticlesForSlider.js -->
+            <!-- Here we are fetching all articles with fetchAllArticlesForSlider.js script-->
           </div>
         </section>
 
@@ -197,7 +190,16 @@
           </div>
 
           <div class="section-features__phone-image-container">
-            <img src="./assets/Silver.png" alt="smartphone image" />
+            <img
+              src="./assets/Silver.png"
+              alt="smartphone image"
+              class="mobile-hidden"
+            />
+            <img
+              src="./assets/mob_mobile.png"
+              alt="smartphone image"
+              class="desktop-hidden"
+            />
           </div>
 
           <div class="section-features__navigation-buttons-container">
@@ -231,155 +233,69 @@
 
         <section class="section section-specs" id="specs">
           <div class="section-specs__first-segment">
-            <h2 class="first-segment__title">Room booking</h2>
-            <h4 class="first-segment__description">
-              zonifero business supports meeting rooms booking. Reserations can
-              ve made from the smartphone, tablet in front of the room or
-              directly from the calednar in Office366 or G Suit. Toom
-              reservations can also be made in companies that are not familiar
-              with Office 365 or G Suite serve.
-            </h4>
-            <table class="first-segment__table">
-              <tbody class="table__body">
-                <tr class="table__first-col">
-                  <td class="table__row-title"><b>unlimited</b></td>
-                  <td class="table__row-description">rooms</td>
-                </tr>
-                <tr class="table__second-col">
-                  <td class="table__row-title"><b>unlimited</b></td>
-                  <td class="table__row-description">employees</td>
-                </tr>
-                <tr class="table__third-col">
-                  <td class="table__row-title"><b>10</b></td>
-                  <td class="table__row-description">floors</td>
-                </tr>
-              </tbody>
-            </table>
-            <img
-              src="./assets/mob_room_booking.png"
-              alt="room booking phone image"
-              class="first-segment__image"
-            />
-            <ul class="first-segment__acordeon">
-              <li class="acordeon__item">
-                <h3 class="acordeon__item-title">Hot-desk booking</h3>
+            <div class="first-segment__flexinioo">
+              <div class="first-segment__text-container">
+                <h2 class="first-segment__title">Room booking</h2>
+                <h4 class="first-segment__description">
+                  zonifero business supports meeting rooms booking. Reserations
+                  can ve made from the smartphone, tablet in front of the room
+                  or directly from the calednar in Office366 or G Suit. Toom
+                  reservations can also be made in companies that are not
+                  familiar with Office 365 or G Suite serve.
+                </h4>
                 <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
+                  src="./assets/mob_room_booking.png"
+                  alt="room booking phone image"
+                  class="first-segment__image"
                 />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
-              <li class="acordeon__item">
-                <h3 class="acordeon__item-title">Satus of employees</h3>
-                <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
-                />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
-              <li class="acordeon__item">
-                <h3 class="acordeon__item-title">Request management</h3>
-                <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
-                />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
-              <li class="acordeon__item acordeon__item--active">
-                <h3 class="acordeon__item-title">Hot-desk booking</h3>
-                <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
-                />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
-              <li class="acordeon__item">
-                <h3 class="acordeon__item-title">Satus of employees</h3>
-                <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
-                />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
-              <li class="acordeon__item">
-                <h3 class="acordeon__item-title">Request management</h3>
-                <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
-                />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
-              <li class="acordeon__item">
-                <h3 class="acordeon__item-title">Hot-desk booking</h3>
-                <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
-                />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
-              <li class="acordeon__item">
-                <h3 class="acordeon__item-title">Satus of employees</h3>
-                <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
-                />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
-              <li class="acordeon__item">
-                <h3 class="acordeon__item-title">Request management</h3>
-                <img
-                  src="./assets/arrow_down_icon.svg"
-                  alt="arrow down icon"
-                  class="acordeon__item-arrow"
-                />
-                <p class="acordeon__item-details">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Magni ea iure neque libero iusto quibusdam, autem
-                </p>
-              </li>
+              </div>
+              <img
+                src="./assets/Space_Gray.png"
+                alt="room booking phone desktop image"
+                class="first-segment__image-desktop"
+              />
+              <table class="first-segment__table">
+                <tbody class="table__body">
+                  <tr class="table__first-col">
+                    <td class="table__row-title"><b>unlimited</b></td>
+                    <td class="table__row-description">rooms</td>
+                  </tr>
+                  <tr class="table__second-col">
+                    <td class="table__row-title"><b>unlimited</b></td>
+                    <td class="table__row-description">employees</td>
+                  </tr>
+                  <tr class="table__third-col">
+                    <td class="table__row-title"><b>10</b></td>
+                    <td class="table__row-description">floors</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="first-segment__accordion">
+              <!-- Here we fetch all accordion items via accordion.js script-->
             </ul>
           </div>
-          <div class="section-specs__second-segment">
-            <h2 class="second-segment__title">System requirements</h2>
-            <h4 class="second-segment__description">
-              zonifero business supports meeting rooms booking. Reserations can
-              ve made from the smartphone, tablet in front of the room or
-              directly from the calednar in Office366 or G Suit. Toom
-              reservations can also be made in companies that are not familiar
-              with Office 365 or G Suite serve.
-            </h4>
+          <div class="section-specs__second-segment gap">
+            <div>
+              <h2 class="second-segment__title">System requirements</h2>
+              <h4 class="second-segment__description">
+                zonifero business supports meeting rooms booking. Reserations
+                can ve made from the smartphone, tablet in front of the room or
+                directly from the calednar in Office366 or G Suit. Toom
+                reservations can also be made in companies that are not familiar
+                with Office 365 or G Suite serve.
+              </h4>
+            </div>
+            <div>
+              <h2 class="second-segment__title mobile-hidden">24/7 Support</h2>
+              <h4 class="second-segment__description mobile-hidden">
+                zonifero business supports meeting rooms booking. Reserations
+                can ve made from the smartphone, tablet in front of the room or
+                directly from the calednar in Office366 or G Suit. Toom
+                reservations can also be made in companies that are not familiar
+                with Office 365 or G Suite serve.
+              </h4>
+            </div>
           </div>
           <div class="second-segment__download">
             <h3 class="download__title">Download</h3>
@@ -405,19 +321,46 @@
             <img
               src="./assets/mob_czujka.png"
               alt="sensor image"
-              class="third-segment__image"
+              class="third-segment__image desktop-hidden"
             />
-            <h3 class="third-segment__sensor-title">Sensors</h3>
-            <p class="third-segment__sensor-description">
-              The integration of zonifero with motion sensors allows dynamic
-              display of occupancy of rooms and desks on the map. The
-              functionality is especially useful in the case of rapidly changing
-              availability of rooms. The use of motion sensors in the office
-              allows you to generate heat maps for offices.
-            </p>
+            <img
+              src="./assets/Layer 59.png"
+              alt="sensor image"
+              class="third-segment__image-desktop mobile-hidden"
+            />
+            <div class="flex gap">
+              <div>
+                <h3 class="third-segment__sensor-title">Sensors</h3>
+                <p class="third-segment__sensor-description">
+                  The integration of zonifero with motion sensors allows dynamic
+                  display of occupancy of rooms and desks on the map. The
+                  functionality is especially useful in the case of rapidly
+                  changing availability of rooms. The use of motion sensors in
+                  the office allows you to generate heat maps for offices.
+                </p>
+              </div>
+              <div>
+                <h3 class="third-segment__sensor-title mobile-hidden">
+                  Real-time conference room and desk availability updates
+                </h3>
+                <p class="third-segment__sensor-description mobile-hidden">
+                  Zonifero business supports the booking of hot-desks, meeting
+                  and other rooms. Reservations can be made from the application
+                  on the tablet in front of the room or directly from the
+                  calendar in Office365 or G Suite. Room reservations can also
+                  be made for businesses that do not use Office 365 or G Suite.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="section-specs__fourth-segment">
             <h2 class="fourth-segment__title">Partners</h2>
+            <p class="fourth-segment__description mobile-hidden">
+              We only work with best. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Deleniti, quia quaerat. We only work with best.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+              quia quaerat.
+            </p>
             <div class="fourth-segment__partners-container">
               <article class="fourth-segment__article">
                 <img
@@ -427,9 +370,7 @@
                 />
                 <p class="article__description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Impedit, voluptate ratione. Cupiditate temporibus quas eaque
-                  velit consequuntur porro quod ratione commodi ipsa! Cum autem
-                  libero aut fuga natus numquam non?
+                  Impedit, voluptate ratione.
                 </p>
               </article>
               <article class="fourth-segment__article">
@@ -440,9 +381,7 @@
                 />
                 <p class="article__description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Impedit, voluptate ratione. Cupiditate temporibus quas eaque
-                  velit consequuntur porro quod ratione commodi ipsa! Cum autem
-                  libero aut fuga natus numquam non?
+                  Impedit, voluptate ratione.
                 </p>
               </article>
               <article class="fourth-segment__article">
@@ -453,40 +392,60 @@
                 />
                 <p class="article__description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Impedit, voluptate ratione. Cupiditate temporibus quas eaque
-                  velit consequuntur porro quod ratione commodi ipsa! Cum autem
-                  libero aut fuga natus numquam non?
+                  Impedit, voluptate ratione.
                 </p>
               </article>
             </div>
           </div>
           <div class="section-specs__fifth-segment">
             <div class="fifth-segment__cost-optimalization">
-              <h2 class="cost-optimalization__title">
-                Zoptymalizuj koszty i ergonomię biura z Zonifero
-              </h2>
-              <h3 class="cost-optimalization__description">
-                Zarządzaj świadomie rozwojem biura, optymalizuj koszty związane
-                z usługami i powierzchnią, a także podnoś komfort pracy dzięki
-                jednemu systemowi.
-              </h3>
+              <div>
+                <h2 class="cost-optimalization__title">
+                  Zoptymalizuj koszty i ergonomię biura z Zonifero
+                </h2>
+                <h3 class="cost-optimalization__description">
+                  Zarządzaj świadomie rozwojem biura, optymalizuj koszty
+                  związane z usługami i powierzchnią, a także podnoś komfort
+                  pracy dzięki jednemu systemowi.
+                </h3>
+              </div>
               <img
                 src="./assets/mob_devices copy.png"
                 alt="mobile devices image"
                 class="cost-optimalization__image"
               />
-
-              <h3 class="cost-optimalization__percentage-number">523%</h3>
-              <h4 class="cost-optimalization__benefits-description">
-                Długoterminowe korzyści z wdrożenia Zonifero wynoszą co najmiej
-                523%* w stosunku do wydanej kwoty. System został zbudowany w
-                oparciu o doświadczenia naszych użytkowników, przez co
-                rozwiązuje praktycznie każdy, powstały na przestrzeni lat
-                problem. Ten fakt jednak nie powstrzymuje Nas przed ciągłbym
-                rozwijaniem aplikacji Zonifero.
-              </h4>
+              <img
+                src="./assets/devices.png"
+                alt="devices image"
+                class="cost-optimalization__desktop-image mobile-hidden"
+              />
+              <div class="flex">
+                <div>
+                  <h3 class="cost-optimalization__percentage-number">523%</h3>
+                  <h4 class="cost-optimalization__benefits-description">
+                    Długoterminowe korzyści z wdrożenia Zonifero wynoszą co
+                    najmiej 523%* w stosunku do wydanej kwoty. System został
+                    zbudowany w oparciu o doświadczenia naszych użytkowników,
+                    przez co rozwiązuje praktycznie każdy, powstały na
+                    przestrzeni lat problem. Ten fakt jednak nie powstrzymuje
+                    Nas przed ciągłbym rozwijaniem aplikacji Zonifero.
+                  </h4>
+                </div>
+                <div class="mobile-hidden">
+                  <h3 class="cost-optimalization__percentage-number">523%</h3>
+                  <h4 class="cost-optimalization__benefits-description">
+                    Długoterminowe korzyści z wdrożenia Zonifero wynoszą co
+                    najmiej 523%* w stosunku do wydanej kwoty. System został
+                    zbudowany w oparciu o doświadczenia naszych użytkowników,
+                    przez co rozwiązuje praktycznie każdy, powstały na
+                    przestrzeni lat problem. Ten fakt jednak nie powstrzymuje
+                    Nas przed ciągłbym rozwijaniem aplikacji Zonifero.
+                  </h4>
+                </div>
+              </div>
             </div>
             <div class="fifth-segment__shop-zonifero">
+              <div></div>
               <h3 class="shop-zonifero__title">Shop zonifero accesories</h3>
               <p class="shop-zonifero__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -495,31 +454,72 @@
               <img
                 src="./assets/mob_starter_kit.png"
                 alt="shop starter kit image"
-                class="shop-zonifero__image"
+                class="shop-zonifero__image desktop-hidden"
               />
               <a href="#contact" class="shop-zonifero__btn">Contact us</a>
+              <div class="shop-zonifero__desktop-images-wrapper mobile-hidden">
+                <div class="shop-zonifero__desktop-images">
+                  <div class="shop-zonifero__desktop-printer-container">
+                    <img
+                      src="./assets/printer.png"
+                      alt="printer image"
+                      class="shop-zonifero__desktop-printer-image"
+                    />
+                    <img
+                      src="./assets/Shadow_printer.png"
+                      alt="shadow printer"
+                      class="shop-zonifero__desktop-shadow-image"
+                    />
+                  </div>
+                  <img
+                    src="./assets/Lobby Starter Kit.png"
+                    alt="tablet image"
+                    class="shop-zonifero__desktop-tablet-image"
+                  />
+                  <img
+                    src="./assets/uchwyt.png"
+                    alt="phone holder image"
+                    class="shop-zonifero__desktop-phone-holder-image"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="section section-faq" id="faq">
           <h2 class="section-faq__title">Frequently Asked Questions</h2>
-          <h3 class="section-faq__highlight_question">
-            Do you store any of my information?
-          </h3>
-          <p class="section-faq__answer">
-            We do not. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consectetur suscipit, asperasd.
-            <a class="section-faq__ask-more-btn">Not helpful</a>?
-          </p>
-          <ul class="section-faq__questions-list">
-            <li class="section-faq__question">Do you offer card readers?</li>
-            <li class="section-faq__question">How do I delete my account?</li>
+          <div>
+            <h3 class="section-faq__highlight_question">
+              Do you store any of my information?
+            </h3>
+            <p class="section-faq__answer">
+              We do not. Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Consectetur suscipit, asperasd.
+              <a href="#faq" class="section-faq__ask-more-btn">Not helpful</a>?
+            </p>
+            <ul class="section-faq__questions-list">
+              <li class="section-faq__question">Do you offer card readers?</li>
+              <li class="section-faq__question">How do I delete my account?</li>
+              <li class="section-faq__question">
+                Can I use Zonifero anywhere in world?
+              </li>
+              <li class="section-faq__question">
+                I`ve got a problem, how do I contact support?
+              </li>
+            </ul>
+          </div>
+          <ul class="section-faq__questions-list mobile-hidden">
             <li class="section-faq__question">
-              Can I use Zonifero anywhere in world?
+              Is Zonifero owned by SoftwareHut?
             </li>
+            <li class="section-faq__question">How does Zonifero work?</li>
             <li class="section-faq__question">
-              I`ve got a problem, how do I contact support?
+              How does Zonifero`s pricing work?
+            </li>
+            <li class="section-faq__question">Do you have any other fees?</li>
+            <li class="section-faq__question">
+              Which currencies do you support?
             </li>
           </ul>
         </section>
@@ -533,53 +533,63 @@
             <span class="section-contact__contact-form-btn">Call us</span>
           </div>
           <form class="section-contact__form">
-            <div class="form__firstName-and-familyName-container">
-              <label for="firstName" class="form__label">Firt name</label>
-              <input
-                type="text"
-                name="firstName"
-                id="firstName"
-                placeholder="Insert your first name"
-                value="John Doe"
-                required
-                class="form__input-text"
-              />
-              <label for="familyName" class="form__label">Family name</label>
-              <input
-                type="text"
-                name="familyName"
-                id="familyName"
-                placeholder="Insert your family name"
-                value="Wick"
-                required
-                class="form__input-text"
-              />
+            <div class="flex gap w-full">
+              <div class="flex flex-col w-full">
+                <label for="firstName" class="form__label">Firt name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="Insert your first name"
+                  value="John Doe"
+                  required
+                  class="form__input-text"
+                />
+              </div>
+              <div class="flex flex-col w-full">
+                <label for="familyName" class="form__label">Family name</label>
+                <input
+                  type="text"
+                  name="familyName"
+                  id="familyName"
+                  placeholder="Insert your family name"
+                  value="Wick"
+                  required
+                  class="form__input-text"
+                />
+              </div>
             </div>
-            <div class="form__phoneNumber-and-email-container">
-              <label for="email" class="form__label">Your email</label>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Insert your email"
-                value="johnw@hollywood.com"
-                required
-                class="form__input-text"
-              />
-              <label
-                for="phoneNumber"
-                class="form__label form__label--not-required"
-                >Your phone</label
-              >
-              <input
-                type="text"
-                name="phoneNumber"
-                id="phoneNumber"
-                placeholder="Insert your phone number"
-                value="+48 605 708 904"
-                class="form__input-text"
-              />
+
+            <div class="flex gap w-full">
+              <div class="flex flex-col w-full">
+                <label for="email" class="form__label">Your email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Insert your email"
+                  value="johnw@hollywood.com"
+                  required
+                  class="form__input-text"
+                />
+              </div>
+              <div class="flex flex-col w-full">
+                <label
+                  for="phoneNumber"
+                  class="form__label form__label--not-required"
+                  >Your phone</label
+                >
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  placeholder="Insert your phone number"
+                  value="+48 605 708 904"
+                  class="form__input-text"
+                />
+              </div>
             </div>
+
             <div class="form__message-container">
               <label for="message" class="form__label">Message</label>
               <textarea
@@ -615,33 +625,36 @@ Hello :) I&apos;m just wondering if you could..</textarea
           </div>
         </section>
       </main>
+
       <footer class="footer">
-        <div class="footer__list-container">
-          <h3 class="footer__list-headline">Products</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">zonifero business</li>
-            <li class="footer__list-item">zonifero real estate</li>
-            <li class="footer__list-item">zonifero lobby</li>
-            <li class="footer__list-item">zonifero services</li>
-            <li class="footer__list-item">zonifero tv</li>
-          </ul>
-        </div>
-        <div class="footer__list-container">
-          <h3 class="footer__list-headline">Resources</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">Documentation</li>
-            <li class="footer__list-item">FAQ</li>
-            <li class="footer__list-item">Blog</li>
-            <li class="footer__list-item">Media</li>
-          </ul>
-        </div>
-        <div class="footer__list-container">
-          <h3 class="footer__list-headline">About</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">About us</li>
-            <li class="footer__list-item">Company</li>
-            <li class="footer__list-item">Blog</li>
-          </ul>
+        <div class="footer__all-lists-wrapper">
+          <div class="footer__list-container">
+            <h3 class="footer__list-headline">Products</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">zonifero business</li>
+              <li class="footer__list-item">zonifero real estate</li>
+              <li class="footer__list-item">zonifero lobby</li>
+              <li class="footer__list-item">zonifero services</li>
+              <li class="footer__list-item">zonifero tv</li>
+            </ul>
+          </div>
+          <div class="footer__list-container">
+            <h3 class="footer__list-headline">Resources</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">Documentation</li>
+              <li class="footer__list-item">FAQ</li>
+              <li class="footer__list-item">Blog</li>
+              <li class="footer__list-item">Media</li>
+            </ul>
+          </div>
+          <div class="footer__list-container">
+            <h3 class="footer__list-headline">About</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">About us</li>
+              <li class="footer__list-item">Company</li>
+              <li class="footer__list-item">Blog</li>
+            </ul>
+          </div>
         </div>
         <hr class="footer__hr" />
         <div class="footer__logo-ex-container">
