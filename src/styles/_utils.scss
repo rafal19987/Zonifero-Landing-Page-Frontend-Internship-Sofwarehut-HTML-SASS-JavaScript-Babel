@@ -33,5 +33,9 @@
 }
 
 .gap {
-  gap: 100px;
+  gap: 0;
+
+  @include desktop {
+    gap: 100px;
+  }
 }
