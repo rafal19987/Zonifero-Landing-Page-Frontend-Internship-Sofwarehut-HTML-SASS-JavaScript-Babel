@@ -7,10 +7,10 @@ const message = document.querySelector('#message').value;
 
 formSubmitBtn.addEventListener('click', (e) => formSubmitHandler(e));
 
-const formValues = [firstName, familyName, email, phoneNumber, message];
+const formValues = { firstName, familyName, email, phoneNumber, message };
 
 const formSubmitHandler = (e) => {
   e.preventDefault();
 
-  alert(formValues.join(' ------ '));
+  alert(JSON.stringify({ ...formValues }));
 };
