@@ -1,5 +1,5 @@
 @mixin h1 {
-  font-size: clamp(45px, 10vw, $font_xl);
+  font-size: clamp(45px, 5vw, $font_xl);
 
   font-family: $primary_font_family;
   line-height: $line_height_xl;
@@ -24,12 +24,6 @@
   line-height: $line_height_s;
 }
 
-@mixin h5 {
-}
-
-@mixin h6 {
-}
-
 @mixin paragraph {
   font-size: $font_s;
   font-family: $secondary_font_family;
@@ -39,7 +33,6 @@
 
 @mixin description-text {
   font-size: clamp(1.5rem, 2vw, $font_l);
-  // font-size: $font_l;
   font-family: $secondary_font_family;
   font-weight: $font_regular;
   line-height: $line_height_m;
@@ -82,7 +75,7 @@
   @include tab;
 
   position: relative;
-  font-size: $font_s;
+  font-size: $font_m;
   font-weight: $font_bold;
   color: $primary_text_color;
   transition: none;
@@ -135,4 +128,10 @@
   &--not-required::after {
     content: '';
   }
+}
+
+@mixin desktop-navigation-item {
+  font-family: $secondary_font_family;
+  font-size: $font_m;
+  color: #000;
 }
