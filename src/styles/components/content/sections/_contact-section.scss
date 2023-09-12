@@ -62,6 +62,8 @@
     @include input;
   }
   &__message-container {
+    margin-top: $metric-base;
+    width: 100%;
     @include desktop {
       width: 100%;
     }
