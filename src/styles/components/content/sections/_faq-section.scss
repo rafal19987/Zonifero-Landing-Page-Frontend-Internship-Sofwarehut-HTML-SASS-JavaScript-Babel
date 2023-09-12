@@ -21,6 +21,7 @@
     @include desktop {
       @include big-headline;
       width: 40%;
+      line-height: 50px;
     }
   }
   &__highlight_question {
