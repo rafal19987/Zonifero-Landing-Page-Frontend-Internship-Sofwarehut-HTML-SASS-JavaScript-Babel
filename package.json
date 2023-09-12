@@ -1,7 +1,7 @@
 {
   "author": "Rafał Izdebski",
   "name": "landing_page_practices",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://rafal19987.github.io/_Johny/",
   "description": "Simple landing page with pure html, scss, js",
   "main": "index.js",
