@@ -1,0 +1,16 @@
+@import 'upper-header';
+@import 'bottom-header';
+@import './mobileHeader/mobile-header';
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200px;
+  background-color: $white;
+  font-family: $secondary_font_family;
+  font-weight: $font_regular;
+  z-index: 99;
+}

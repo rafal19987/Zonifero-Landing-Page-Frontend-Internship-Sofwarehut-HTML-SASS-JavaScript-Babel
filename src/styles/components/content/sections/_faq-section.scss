@@ -1,0 +1,67 @@
+.section-faq {
+  margin-top: 90px;
+  width: 100vw;
+  max-height: 100% !important;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include desktop {
+    display: flex;
+    gap: $metric-l;
+    align-items: start;
+    padding-left: 16%;
+    max-width: 1500px;
+  }
+  &__title {
+    width: 70%;
+    font-size: 36px;
+    font-family: $primary_font_family;
+    font-weight: $font_bold;
+    line-height: 36px;
+    @include desktop {
+      @include big-headline;
+      width: 40%;
+      line-height: 50px;
+    }
+  }
+  &__highlight_question {
+    margin-top: 60px;
+    font-size: $font_s;
+    font-family: $primary_font_family;
+    font-weight: $font_light;
+    line-height: $line_height_xs;
+    @include desktop {
+      margin-top: 0;
+    }
+  }
+  &__answer {
+    margin-top: 20px;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_light;
+    line-height: $line_height_xs;
+  }
+  &__ask-more-btn {
+    padding-left: 4px;
+    color: black;
+    text-decoration: underline;
+  }
+  &__questions-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    @include desktop {
+      margin-top: 0;
+      width: 50%;
+    }
+  }
+  &__question {
+    font-size: 36px;
+    font-size: $font_s;
+    font-family: $secondary_font_family;
+    font-weight: $font_regular;
+    line-height: $line_height_xs;
+  }
+}

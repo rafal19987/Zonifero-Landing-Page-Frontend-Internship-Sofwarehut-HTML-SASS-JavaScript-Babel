@@ -1,0 +1,98 @@
+.upper-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  padding-left: 40px;
+
+  &__logo-container {
+    padding-top: 40px;
+  }
+
+  &__menu-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__menu-list {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+    height: 60%;
+    list-style: none;
+  }
+
+  &__menu-list-item {
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    justify-items: center;
+    font-size: 12px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__get-app-button {
+    width: 300px;
+    padding: 20px 100px 2px 0;
+    border: none;
+    background-color: $primary_color;
+    color: $white;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
+}
+
+#selectLanguageBtn {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.select-lang-bar {
+  position: absolute;
+  top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 50px;
+  opacity: 0;
+  cursor: default;
+  transition: all 0.1s ease;
+
+  &--open {
+    opacity: 1;
+  }
+}
+
+.lang-option {
+  cursor: pointer;
+
+  &--selected {
+    font-weight: 600;
+  }
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.signin-button {
+  font-weight: $font_bold;
+}

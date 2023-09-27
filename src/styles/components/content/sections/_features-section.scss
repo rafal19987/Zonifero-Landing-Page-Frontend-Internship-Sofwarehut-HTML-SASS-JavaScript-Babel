@@ -1,0 +1,173 @@
+.section-features {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+
+  &__top-backgound {
+    position: relative;
+    width: 100vw;
+    height: 450px;
+
+    & img {
+      object-fit: cover;
+      width: 100%;
+      height: 500px;
+    }
+  }
+
+  &__phone-image-container {
+    position: absolute;
+    top: 200px;
+    left: 17%;
+    width: 200px;
+    height: 300px;
+
+    @include tablet {
+      left: 35%;
+    }
+
+    @include desktop {
+      width: 400px;
+      height: 650px;
+      top: 0;
+      left: auto;
+      right: 19%;
+    }
+
+    & img {
+      object-fit: cover;
+    }
+  }
+  &__navigation-buttons-container {
+    position: absolute;
+    top: 480px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: $metric-m;
+    padding-right: 0;
+
+    @include tablet {
+      padding-right: 18px;
+    }
+    @include desktop {
+      height: $metric-l;
+      top: 470px;
+    }
+  }
+  &__navigation-left-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $metric-m;
+    height: 100%;
+    background: #fff;
+
+    @include desktop {
+      width: $metric-l;
+    }
+
+    & img {
+      transform: rotate(90deg);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__navigation-right-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $metric-m;
+    height: 100%;
+    background: #fff;
+
+    @include desktop {
+      width: $metric-l;
+    }
+
+    & img {
+      transform: rotate(-90deg);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__bottom-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 370px;
+    max-height: 100%;
+    background-color: $primary_color;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: $metric-s;
+    padding-right: $metric-m;
+    padding-top: $metric-xxl;
+
+    @include desktop {
+      flex-direction: row;
+      padding-left: 19%;
+      gap: $metric-xxl;
+    }
+  }
+
+  &__big-text {
+    @include h2;
+    color: $white;
+    width: 100%;
+
+    @include desktop {
+      @include big-headline;
+      line-height: 50px;
+      width: 500px;
+    }
+  }
+  &__small-text {
+    @include paragraph;
+    color: $white;
+    padding-top: $metric-l;
+
+    @include desktop {
+      padding-top: $metric-xl;
+      width: 600px;
+    }
+  }
+  &__bottom-text-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @include desktop {
+      padding-top: $metric-l;
+    }
+  }
+  &__bottom-text {
+    @include paragraph;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: $metric-s;
+    border-top: 2px dotted rgba(255, 255, 255, 0.2);
+    color: $white;
+    text-decoration: none;
+
+    @include desktop {
+      padding-left: $metric-l;
+      padding-right: $metric-l;
+      width: fit-content;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
